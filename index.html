@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lazyload</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .main {
+            margin-top: 100px;
+        }
+        .row {
+            min-height: 100px;
+            /*display: -webkit-flex;*/
+        }
+        .wrap {
+            display: inline-block;
+            height: 200px;
+        }
+        .lazy {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>lazyload images</h1>
+    </header>
+    <section>
+        <div class="main">
+            <div class="row">
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (1).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (2).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (3).jpg" alt="coser">
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (4).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (5).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (6).jpg" alt="coser">
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (7).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (8).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (9).jpg" alt="coser">
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (10).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (11).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (12).jpg" alt="coser">
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (13).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (14).jpg" alt="coser">
+                </div>
+                <div class="wrap">
+                    <img class="lazy" data-src="./img/coser (15).jpg" alt="coser">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./jquery.js"></script>
+    <script src="./jquery.lazyload.js"></script>
+    <script>
+        $('.lazy').lazyload();
+    </script>
+</body>
+</html>
